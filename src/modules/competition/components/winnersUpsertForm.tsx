@@ -6,7 +6,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -14,9 +13,8 @@ import {
 } from "@/components/ui/sheet";
 import { Plus } from "lucide-react";
 
-type Props = {};
 
-const WinnersUpsertForm = (props: Props) => {
+const WinnersUpsertForm = () => {
   return (
     <Sheet>
       <SheetTrigger>

@@ -1,10 +1,9 @@
 import PageHeader from "@/components/shared/PageHeader";
-import React from "react";
 import { DataTable } from "../components/data-table";
 import { WheelColumns } from "../components/wheelColumns";
 import WheelsUpsertForm from "../components/WheelsUpsert";
+import { IWheel } from "../core/models";
 
-type Props = {};
 
 const dummyData: IWheel[] = [
   {
@@ -89,7 +88,7 @@ const dummyData: IWheel[] = [
   },
 ];
 
-const Wheels = (props: Props) => {
+const Wheels = () => {
   const WheelsUpsert = <WheelsUpsertForm />;
 
   return (

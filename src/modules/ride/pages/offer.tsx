@@ -1,11 +1,9 @@
 import PageHeader from "@/components/shared/PageHeader";
-import React from "react";
 import { DataTable } from "../components/data-table";
 import { IOffer } from "../core/models";
 import { OffersColumns } from "../components/offersColumns";
 import OffersUpsertForm from "../components/OffersUpsert";
 
-type Props = {};
 
 const offers: IOffer[] = [
   {
@@ -100,7 +98,7 @@ const offers: IOffer[] = [
   },
 ];
 
-const Offers = (props: Props) => {
+const Offers = () => {
   const offersUpsert = <OffersUpsertForm />;
 
   return (

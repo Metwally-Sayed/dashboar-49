@@ -32,6 +32,7 @@ export function DataTablePagination<TData>({
           <p className="text-sm font-medium">Rows per page</p>
           <Select
             value={`${table.getState().pagination.pageSize}`}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             onValueChange={(value: any) => {
               table.setPageSize(Number(value));
             }}

@@ -1,9 +1,7 @@
 import PageHeader from "@/components/shared/PageHeader";
 import { Button } from "@/components/ui/button";
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
-type Props = {};
 
 export const ROUTES = [
   {
@@ -16,7 +14,7 @@ export const ROUTES = [
   },
 ];
 
-const Competition = (props: Props) => {
+const Competition = () => {
   const navigate = useNavigate();
 
   return (

@@ -13,9 +13,8 @@ import {
 } from "@/components/ui/sheet";
 import { Plus } from "lucide-react";
 
-type Props = {};
 
-const WheelsItemUpsert = (props: Props) => {
+const WheelsItemUpsert = () => {
   return (
     <Sheet>
       <SheetTrigger>

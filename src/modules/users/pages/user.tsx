@@ -1,10 +1,7 @@
 import PageHeader from "@/components/shared/PageHeader";
 import { DataTable } from "../components/data-table";
-import { MoreHorizontal } from "lucide-react";
 import { IUser } from "../core/models";
 import { columns } from "../components/columns";
-import UserUpsertForm, { SheetSide } from "../components/UserUpsertForm";
-type Props = {};
 
 export const users: IUser[] = [
   {
@@ -40,7 +37,7 @@ export const users: IUser[] = [
   // Add more user objects as needed
 ];
 
-const User = (props: Props) => {
+const User = () => {
   return (
     <>
       {/* Page header */}

@@ -1,10 +1,8 @@
 import PageHeader from "@/components/shared/PageHeader";
-import React from "react";
 import { DataTable } from "../components/data-table";
 import { WinnersColumns } from "../components/winnersColumns";
 import WinnersUpsertForm from "../components/winnersUpsertForm";
-
-type Props = {};
+import { IWinner } from "../core/models";
 
 const dummyWinners: IWinner[] = [
   {
@@ -79,7 +77,7 @@ const dummyWinners: IWinner[] = [
   },
 ];
 
-const Winners = (props: Props) => {
+const Winners = () => {
   const upsertWinner = <WinnersUpsertForm />;
 
   return (

@@ -7,7 +7,6 @@ import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
-  useLocation,
 } from "react-router-dom";
 
 const App = lazy(() => import("@/App"));
@@ -19,7 +18,7 @@ const Competitions = lazy(
 );
 const Wheels = lazy(() => import("@/modules/wheel/wheelRoutes"));
 
-const SuspensedView: FC<WithChildren> = ({
+const SuspensedView= ({
   children,
 }: {
   children: React.ReactNode;

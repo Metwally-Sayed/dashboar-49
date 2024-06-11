@@ -1,7 +1,6 @@
 import "./App.css";
 import PageHeader from "./components/shared/PageHeader";
 import { Button } from "./components/ui/button";
-import useRefreshToken from "./lib/hooks/useRefreshToken";
 import { useNavigate } from "react-router-dom";
 export const ROUTES = [
   {

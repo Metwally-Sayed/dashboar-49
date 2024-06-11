@@ -2,10 +2,8 @@ import { axiosPrivate } from "../apis";
 import { useEffect } from "react";
 import useRefreshToken from "./useRefreshToken";
 import useAuth from "./useAuth";
-import { config } from "process";
-type Props = {};
 
-const useAxiosPrivate = (props: Props) => {
+const useAxiosPrivate = () => {
   const refresh = useRefreshToken();
   const { auth } = useAuth();
 

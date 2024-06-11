@@ -58,7 +58,11 @@ const MENU = [
         icon: <Users />,
         href: "/wheel/wheels",
       },
-      { title: "Wheel Items", icon: <UsersRound />, href: "/wheel/wheel-items" },
+      {
+        title: "Wheel Items",
+        icon: <UsersRound />,
+        href: "/wheel/wheel-items",
+      },
     ],
   },
   {
@@ -67,17 +71,19 @@ const MENU = [
     href: "/setting",
     submenu: true,
     submenuItems: [
-      { title: "Notifications", icon: <Bell /> },
-      { title: "Profile", icon: <UsersRound /> },
+      { title: "Notifications", href: "", icon: <Bell /> },
+      { title: "Profile", href: "", icon: <UsersRound /> },
     ],
   },
 ];
 
 const SideBar = () => {
   const [open, setOpen] = useState(false);
-  const [openedSubmenuIndex, setOpenedSubmenuIndex] = useState(null);
+  const [openedSubmenuIndex, setOpenedSubmenuIndex] = useState<number | null>(
+    null
+  );
 
-  const handleSubmenuClick = (index: number | React.SetStateAction<null>) => {
+  const handleSubmenuClick = (index: number | null) => {
     setOpenedSubmenuIndex(openedSubmenuIndex === index ? null : index);
   };
 

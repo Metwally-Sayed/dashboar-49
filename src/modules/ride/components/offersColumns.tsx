@@ -67,7 +67,7 @@ export const OffersColumns: ColumnDef<IOffer>[] = [
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => {
-                navigator.clipboard.writeText(user.email);
+                navigator.clipboard.writeText(user.name);
               }}
             >
               Copy User Email

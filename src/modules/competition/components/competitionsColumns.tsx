@@ -67,7 +67,7 @@ export const CompetitionsColumns: ColumnDef<ICompetition>[] = [
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => {
-                navigator.clipboard.writeText(user.email);
+                navigator.clipboard.writeText(user.name);
               }}
             >
               Copy User Email

@@ -1,11 +1,9 @@
 import PageHeader from "@/components/shared/PageHeader";
-import React from "react";
 import { DataTable } from "../components/data-table";
 import { ridesColumns } from "../components/ridesColumns";
 import { IRide } from "../core/models";
 import RideUpsertForm from "../components/RideUpsertForm";
 
-type Props = {};
 
 const rides: IRide[] = [
   {
@@ -100,7 +98,7 @@ const rides: IRide[] = [
   },
 ];
 
-const Rides = (props: Props) => {
+const Rides = () => {
   const upsertRide = <RideUpsertForm />;
   return (
     <>

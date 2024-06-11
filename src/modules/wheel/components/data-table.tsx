@@ -11,7 +11,6 @@ import {
   ColumnFiltersState,
   getFilteredRowModel,
 } from "@tanstack/react-table";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
   Table,
@@ -22,13 +21,13 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import React from "react";
-import { Plus } from "lucide-react";
 import { DataTablePagination } from "./DataTablePagination";
 // import UserUpsertForm from "./UserUpsertForm";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   upsert: any;
 }
 

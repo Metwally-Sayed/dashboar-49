@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -16,12 +15,11 @@ import { z } from "zod";
 import { loginFormSchema } from "../core/schema";
 import { toast } from "@/components/ui/use-toast";
 import { login } from "../core/requests";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import {  useNavigate, useLocation } from "react-router-dom";
 import useAuth from "@/lib/hooks/useAuth";
 
-type Props = {};
 
-const LoginForm = (props: Props) => {
+const LoginForm = () => {
   const { setAuth, auth } = useAuth();
 
   const navigate = useNavigate();

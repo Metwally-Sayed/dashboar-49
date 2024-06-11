@@ -13,7 +13,8 @@ const useRefreshToken = () => {
       refreshToken: refreshToken,
     });
     const accessToken = response.data.data.accessToken;
-    setAuth((prev) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    setAuth((prev: any) => {
       console.log("accessToken" + accessToken);
       console.log(`${accessToken}  after updating`);
 

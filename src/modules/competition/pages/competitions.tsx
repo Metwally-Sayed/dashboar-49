@@ -1,11 +1,9 @@
-import React from "react";
 import { ICompetition } from "../core/models";
 import PageHeader from "@/components/shared/PageHeader";
 import { DataTable } from "../components/data-table";
 import { CompetitionsColumns } from "../components/competitionsColumns";
 import CompitionUpsertForm from "../components/competitionsUpsertForm";
 
-type Props = {};
 
 const dummyCompetitions: ICompetition[] = [
   {
@@ -90,7 +88,7 @@ const dummyCompetitions: ICompetition[] = [
   },
 ];
 
-const Competitions = (props: Props) => {
+const Competitions = () => {
   const CompitionUpsert = <CompitionUpsertForm />;
   return (
     <>

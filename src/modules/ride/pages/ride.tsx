@@ -1,9 +1,7 @@
 import PageHeader from "@/components/shared/PageHeader";
 import { Button } from "@/components/ui/button";
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
-type Props = {};
 
 export const ROUTES = [
   {
@@ -24,7 +22,7 @@ export const ROUTES = [
   },
 ];
 
-const Ride = (props: Props) => {
+const Ride = () => {
   const navigate = useNavigate();
 
   return (

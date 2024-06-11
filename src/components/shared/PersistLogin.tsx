@@ -1,13 +1,11 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import useRefreshToken from "@/lib/hooks/useRefreshToken";
 import useAuth from "@/lib/hooks/useAuth";
 import { LoaderCircle } from "lucide-react";
 
-type Props = {};
 
-const PersistLogin = (props: Props) => {
+const PersistLogin = () => {
   const [isLoading, setIsLoading] = useState(true);
   const refresh = useRefreshToken();
   const { auth } = useAuth();

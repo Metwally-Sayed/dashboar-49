@@ -1,15 +1,9 @@
-import React from "react";
 import { DataTable } from "../components/data-table";
 import PageHeader from "@/components/shared/PageHeader";
-import { IWheelItems } from "../core/models";
-import { WheelColumns } from "../components/wheelColumns";
-import WheelsUpsertForm from "../components/WheelsUpsert";
 import { WheelItemsColumns } from "../components/wheelItemsColumns";
 import WheelsItemUpsert from "../components/WheelsItemUpsert";
 
-type Props = {};
-
-const dummyData: IWheelItems[] = [
+const dummy = [
   {
     id: 1,
     name: "Wheel Item 1",
@@ -92,8 +86,8 @@ const dummyData: IWheelItems[] = [
   },
 ];
 
-const WheelItems = (props: Props) => {
-    const WheelItemsUpsert = <WheelsItemUpsert />;
+const WheelItems = () => {
+  const WheelItemsUpsert = <WheelsItemUpsert />;
 
   return (
     <>
@@ -104,8 +98,9 @@ const WheelItems = (props: Props) => {
       <div className="h-screen w-full py-10">
         <DataTable
           columns={WheelItemsColumns}
-          data={dummyData}
           upsert={WheelItemsUpsert}
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          data={dummy as any}
         />
       </div>
     </>
