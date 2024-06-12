@@ -4,7 +4,7 @@ import SideBar from "./SideBar";
 
 const Layout = () => {
   return (
-    <div className="flex">
+    <div className="lg:flex">
       <SideBar />
       <ContentWrapper>
         <Outlet />
