@@ -15,9 +15,8 @@ import { z } from "zod";
 import { loginFormSchema } from "../core/schema";
 import { toast } from "@/components/ui/use-toast";
 import { login } from "../core/requests";
-import {  useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import useAuth from "@/lib/hooks/useAuth";
-
 
 const LoginForm = () => {
   const { setAuth, auth } = useAuth();
@@ -60,7 +59,7 @@ const LoginForm = () => {
   console.log(auth);
 
   return (
-    <div className="flex flex-col w-1/3 border rounded-lg shadow-lg p-5">
+    <div className="flex flex-col lg:w-1/3 w-[90%] border rounded-lg shadow-lg p-5">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField
