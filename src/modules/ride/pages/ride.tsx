@@ -87,11 +87,15 @@ const INPUTS = [
     type: "number",
   },
   {
+    name: "highCostPerKilo",
+    title: "High Cost Per Kilo",
+    type: "number",
+  },
+  {
     name: "lowCostPerKilo",
     title: "Low Cost Per Kilo",
     type: "number",
   },
-
   {
     name: "constantY",
     title: "Constant Y",

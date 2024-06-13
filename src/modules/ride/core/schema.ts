@@ -19,4 +19,5 @@ export const rideSchema = z.object({
   rideTechnicalExaminationCenterLocation: z.string(),
   rideDrugAnalysisCenterPhone: z.string(),
   rideDrugAnalysisCenterLocation: z.string(),
+  highCostPerKilo: z.string(),
 });
